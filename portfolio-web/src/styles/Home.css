@@ -51,12 +51,62 @@
 
 .LeftNavbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: 9999; 
+
 }
 
 .AboutMe {
   margin-left: 25%; 
+}
+
+/* Resume Section */
+.resume-download-button {
+  /* padding: 10px 20px;
+  border-radius: 5px; */
+  font-size: 1rem;
+}
+
+#resume {
+  background-color: #f5f5f5;
+}
+
+#resume iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: calc(100vh - 200px); /* adjust the height as needed */
+}
+
+
+/* Projects Section */
+.project-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-box .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+}
+
+.project-box:hover .overlay {
+  transform: translateY(0%);
 }

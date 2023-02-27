@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useRef, useEffect } from "react";
 import avatar from './assets/avatar.jpg';
 import { Container, Row, Col } from "reactstrap";
 
 
+
+
 const AboutMe = () => {
+
   return (
     <section id="aboutme" className="d-flex align-items-center vh-100">
         <Container fluid className="d-flex justify-content-center align-items-center">
@@ -24,5 +27,4 @@ const AboutMe = () => {
     </section>
   );
 }
-
 export default AboutMe;
